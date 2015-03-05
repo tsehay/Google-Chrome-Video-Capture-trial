@@ -5,7 +5,7 @@ A wrapper for getUserMedia, enabling easy cross-browser support for webcam acces
 
 ## Usage
 
-First, create a new instance of `Wrapper`, providing the id of a video element. The success and error callback arWraents are optional.
+First, create a new instance of `Wrapper`, providing the id of a video element. The success and error callback arguments are optional.
 
     var Wra = new Wrapper({video: 'myVideo'}, showSuccess, showError);
 
