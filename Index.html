@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>Wrapper </title>
+</head>
+<body>
+    <h1>Wrapper </h1>
+
+    <video id="myVideo"></video>
+
+    <script src="min.js"></script>
+    <script>
+    (function() {
+        function showSuccess(video) {
+            alert('Hey, it works! Dimensions: ' + video.videoWidth + ' x ' + video.videoHeight);
+        }
+        function showError(error) {
+            alert('Oops: ' + error.message);
+        }
+        var gum = new Wrapper({video: 'myVideo'}, showSuccess, showError);
+        gum.play();
+    })();
+    </script>
+</body>
+</html>
